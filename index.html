@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta charset="ISO-8859-1">
+<title>Employee Tracking System</title>
+<link rel="stylesheet" type="text/css" href="bg_css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+#demo {
+	background: #0d0442;
+	padding: 7% 10%;
+}
+
+.hr-style {
+	border: 5px dotted white;
+	border-bottom: none;
+	width: 50px;
+}
+
+.carousel-item {
+	padding: 5% 15%;
+	text-align: center;
+	font-style: italic;
+}
+
+.demo-img {
+	width: 120px;
+	height: auto;
+}
+
+.carousel-indicators {
+	bottom: -20px;
+}
+</style>
+</head>
+<body>
+
+	<div class="bgimg">
+		<nav class="navbar navbar-expand-md bg-info navbar-dark">
+
+			<a class="navbar-brand text-dark" href="#">Employee Tracking
+				Management System</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#">Employee
+							Motivation </a></li>
+					<li class="nav-item"><a class="nav-link ml-4" href="vlog.jsp">Employee
+							Vlog</a></li>
+					<li class="nav-item"><a class="nav-link ml-4"
+						href="notice.jsp">Notice</a></li>
+					<li class="nav-item"><a class="nav-link ml-4" href="#">About</a></li>
+
+					<li class="nav-item ml-4"><a class="nav-link ml-4" href="#">Logout</a></li>
+
+
+				</ul>
+			</div>
+			<div class="dropdown show">
+				<a class="btn btn-secondary dropdown-toggle mr-4" href="#"
+					role="button" id="dropdownMenuLink" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false"> Register here </a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="hr_registration.jsp">Hr</a> <a
+						class="dropdown-item" href="registration.jsp">Employee</a>
+				</div>
+			</div>
+			<div class="dropdown show">
+				<a class="btn btn-secondary dropdown-toggle mr-4" href="#"
+					role="button" id="dropdownMenuLink" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false"> Login here </a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="adminlog.jsp">Admin</a> <a
+						class="dropdown-item" href="login.jsp">Hr</a> <a
+						class="dropdown-item" href="emplogin.jsp">Employee</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container text-center text-white headerset">
+			<h2 class="text-white">Welcome to my tutorial</h2>
+			<h1 class="text-white">Work hard one day you will be success and
+				complete your dreams</h1>
+		</div>
+	</div>
+
+	<section class="container ourservices text-center text-success">
+		<h1>SERVICES</h1>
+		<H4>Welcome to our Website</H4>
+
+		<div class="row rowsetting">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-shopping-cart fa-3x text-white"></i>
+				</div>
+				<h1>E-Commerce</h1>
+				<p>E-commerce is powered by the internet. Customers access an
+					online store to browse through and place orders for products or
+					services via their own devices</p>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-desktop fa-3x text-white"></i>
+				</div>
+				<h1>Responsive Design</h1>
+				<p>a web development approach that creates dynamic changes to
+					the appearance of a website, depending on the screen size and
+					orientation of the device being used to view it</p>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-lock fa-3x text-white"></i>
+				</div>
+				<h1>Web Security</h1>
+				<p>In general, web security refers to the protective measures
+					and protocols that organizations adopt to protect the organization
+					from cyber criminals and threats that use the web channel.</p>
+			</div>
+		</div>
+
+	</section>
+
+
+	<div class="container-fluid text-white">
+		<section id="demo">
+			<div class="section-title">
+				<h3 class="text-center">Web Page</h3>
+				<hr class="hr-style">
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="carouselExampleIndicators" class="carousel slide"
+						data-ride="carousel" data-interval="2000" data-pause="hover">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0"
+								class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<p>Item1. Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Explicabo maxime provident amet fugiat, repellat sunt?</p>
+								<img class="demo-img rounded-circle mb-3"
+									src="https://media.istockphoto.com/id/1189849703/vector/01-open-book-and-creative-paper-airplanes-teamwork-paper-art-style.jpg?s=612x612&w=0&k=20&c=xeXSZaFfGv5CoNgWhZRJzlCWSMijXWrqVjEzfNlbpKE="
+									alt="">
+								<h6>Books</h6>
+							</div>
+							<div class="carousel-item">
+								<p>Item2. Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Explicabo maxime provident amet fugiat, repellat sunt?</p>
+								<img class="demo-img rounded-circle mb-3"
+									src="https://media.istockphoto.com/id/1163290205/vector/mystery-open-book-with-shining-pages-fantasy-book-with-magic-light-sparkles-and-stars-vector.jpg?s=612x612&w=0&k=20&c=okeOBDxNAw9wx-dM5CQoVtzu7XKzd7gyZqd7wuW8bQU="
+									alt="">
+								<h6>Books</h6>
+							</div>
+							<div class="carousel-item">
+								<p>Item3. Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Explicabo maxime provident amet fugiat, repellat sunt?</p>
+								<img class="demo-img rounded-circle mb-3"
+									src="https://media.istockphoto.com/id/1178677764/vector/paper-cut-art-of-open-book-with-learning-education-and-explore-concept.jpg?s=612x612&w=0&k=20&c=BMX01C-gIgp1fnulRUnFzixxmJPplsVmNbP2ChhDORo="
+									alt="">
+								<h6>Books</h6>
+							</div>
+							<div class="carousel-item">
+								<p>Item3. Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Explicabo maxime provident amet fugiat, repellat sunt?</p>
+								<img class="demo-img rounded-circle mb-3"
+									src="https://media.istockphoto.com/id/1126370780/photo/opened-book-isolated.jpg?s=612x612&w=0&k=20&c=Nt3kmUiEVr8cD-uqXAYlszFqCk8Tp-2yW38sL9Ik4Yg="
+									alt="">
+								<h6>Books</h6>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators"
+							role="button" data-slide="prev"> <span
+							class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+							class="sr-only">Previous</span>
+						</a> <a class="carousel-control-next"
+							href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<br>
+	<br>
+	<section class="ourcollections">
+		<div class="container text-center">
+			<h1 class="text-success">All is Well</h1>
+			<p class="text-success">Hard work is a key of success</p>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto">
+				<figure class="figure">
+					<img src="images/tea.jpg"
+						class="figure-img img-fluid rounded-circle" height="260px"
+						width="260px">
+					<figcaption>
+						<h4 class="text-success">Tea</h4>
+						<p class="figure-caption text-primary">tea is best</p>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto">
+				<figure class="figure">
+					<img src="images/tea.jpg"
+						class="figure-img img-fluid rounded-circle" height="260px"
+						width="260px">
+					<figcaption>
+						<h4 class="text-success">Tea</h4>
+						<p class="figure-caption text-primary">tea is best</p>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto">
+				<figure class="figure">
+					<img src="images/tea.jpg"
+						class="figure-img img-fluid rounded-circle" height="260px"
+						width="260px">
+					<figcaption>
+						<h4 class="text-success">Tea</h4>
+						<p class="figure-caption text-primary">tea is best</p>
+					</figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</section>
+	<br>
+	<br>
+	<section>
+		<div id="contact" class="contact-area section-spacing">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-10 col-lg-8 m-auto">
+						<div class="section-inner-content text-center">
+							<div class="section-title">
+
+								<h1 class="text-warning">
+									<b>Get in touch</b>
+								</h1>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-12 col-md-4 col-lg-4">
+						<div class="contact-lines">
+							<div class="single-contact-box text-left wow animate fadeInUp"
+								data-wow-duration="600ms" data-wow-delay="0s">
+								<h3 class="phone pc">
+									<i class="fa fa-phone" aria-hidden="true"></i> <span>Phone
+										:</span>
+								</h3>
+								<p class="text-primary">
+									<a>(+91) 12 34 568</a> <br> <a>(+91) 24 68 146</a>
+								</p>
+							</div>
+
+							<div class="single-contact-box text-left wow animate fadeInUp"
+								data-wow-duration="900ms" data-wow-delay="0s">
+								<h3 class="email pc">
+									<i class="fa fa-envelope" aria-hidden="true"></i> <span>Email
+										:</span>
+								</h3>
+								<p class="text-primary">
+									<a href="mailto:info@example.com">support@example.com</a>
+								</p>
+							</div>
+
+							<div class="single-contact-box text-left wow animate fadeInUp"
+								data-wow-duration="1200ms" data-wow-delay="0s">
+								<h3 class="address pc">
+									<i class="fa fa-address-card" aria-hidden="true"></i> <span>Address
+										:</span>
+								</h3>
+								<p class="text-primary">Calcutta 7001</p>
+							</div>
+						</div>
+					</div>
+					<br> <br> <br> <br>
+					<div class="col-12 col-md-8 col-lg-8">
+						<form>
+							<p class="text-primary">
+								<b>If you have any suggestion, project or even you want to
+									say Hello.. please fill out the form below and I will reply you
+									shortly.</b>
+							</p>
+
+							<div>
+								<input class="form-input form-control" id="contact-name"
+									type="text" name="name" placeholder="Your name" required>
+							</div>
+							<br>
+							<div>
+								<input class="form-input form-control" id="contact-email"
+									type="email" name="email" placeholder="Your Email" required>
+							</div>
+							<br>
+							<div>
+								<input class="form-input form-control" id="contact-phone"
+									type="text" name="phone" placeholder="Your Phone" required>
+							</div>
+							<br>
+							<div>
+								<textarea class="form-input" id="contact-message" name="message"
+									placeholder="Your Message" rows="6" cols="80" required></textarea>
+							</div>
+
+							<div>
+								<button type="submit" class="btn btn-warning">Send
+									Message</button>
+							</div>
+						</form>
+					</div>
+					<br> <br>
+					<div class="col-12">
+						<!-- GOOGLE MAP  -->
+						<div class="google_map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14588.836476427918!2d90.2526255!3d23.917647949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1634662540506!5m2!1sen!2sbd"
+								height="350" style="border: 0; width: 100%;" allowfullscreen=""
+								loading="lazy"> </iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="footer-area bg-active">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="social-area text-center">
+						<ul>
+							<i class="fa fa-linkedin text-primary" aria-hidden="true">Linkdin</i>
+							<i class="fa fa-facebook-square text-primary" aria-hidden="true">Facebook</i>
+							<i class="fa fa-twitter text-primary" aria-hidden="true">Twitter</i>
+							<i class="fa fa-github text-primary" aria-hidden="true">Github</i>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 copy-right text-center text-primary">
+					<p>
+						Copyright ©2023<a href="#"> </a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</body>
+</html>
